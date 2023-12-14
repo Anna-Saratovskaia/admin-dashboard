@@ -22,14 +22,18 @@ nav {
   padding: 30px;
   display: grid;
   gap: 30%;
-  line-height: 3;
+  line-height: 25px;
 
 }
 
-
+nav div p {
+  margin-bottom: 1rem;
+}
 
 .nav-icon {
   width: 25px;
+  height: 25px;
+  vertical-align: top;
   filter: invert(1);
   margin-right: 10px;
 }
@@ -104,8 +108,7 @@ button {
 
 ul {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
   gap: 10px;
   list-style: none;
 }
